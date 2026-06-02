@@ -17,7 +17,7 @@ def weather():
     
     #check for empty strings or string with only spaces
     if not bool(city.strip()):
-        city = "kansas City" 
+        city = "Kansas City"
         
     weather_data = get_current_weather(city)
     
@@ -34,7 +34,6 @@ def weather():
     temp=f'{weather_data["main"]["temp"]:.1f}',
     feels_like=f'{weather_data["main"]["feels_like"]:.1f}'
 )                     
-
 
 
 if __name__ == "__main__":
